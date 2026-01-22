@@ -6,6 +6,7 @@ import LogoMaps from "../assets/LogoMaps.svg";
 import LogoCalendrier from "../assets/LogoCalendrier.svg";
 import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg"
 import PetaleJaune from "../assets/PetaleJaune.svg"
+import PetaleOrangeClair from "../assets/PetaleOrangeClair.svg";
 import "../styles/Home.css";
 
 export default function HomePage() {
@@ -24,21 +25,34 @@ export default function HomePage() {
                                         <div className="w-3 h-3 rounded-full bg-[#FFC107] border-4 border-black -ml-1 flex-shrink-0"></div>
                                     </div>
                                 </span>
-
                                 <span> : La cybersécurité </span>
-
-                                {/* On isole le "de" pour qu'il devienne le point de repère du pétale */}
                                 <span className="relative inline-block">
                                     de
                                     <img 
                                         src={PetaleOrangeFonce} 
-                                        alt="Pétale" 
+                                        alt="Pétale Orange" 
                                         className="absolute -top-14 left-20 -translate-x-1/2 w-8 h-8 animate-pulse-slow"
                                     />
                                 </span>
-
                                 <br />
-                                <span>demain se construit aujourd'hui</span>
+                                {/* Nouveau bloc pour le pétale orange clair avant "demain" */}
+                                <span className="relative inline-block">
+                                    <img 
+                                        src={PetaleOrangeClair} 
+                                        alt="Pétale Orange Clair" 
+                                        className="absolute top-8 -left-16 w-8 h-8 animate-pulse-slow"
+                                    />
+                                    demain
+                                </span>
+                                <span> se construit </span>
+                                <span className="relative inline-block">
+                                    aujourd'hui
+                                    <img 
+                                        src={PetaleJaune} 
+                                        alt="Pétale Jaune" 
+                                        className="absolute -bottom-4 -right-40 w-14 h-14 animate-pulse-slow"
+                                    />
+                                </span>
                             </h1>
                         </div>
                         <div className="flex justify-center">
