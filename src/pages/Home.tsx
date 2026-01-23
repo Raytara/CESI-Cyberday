@@ -2,6 +2,10 @@ import Footer from "../component/Footer";
 import Header from "../component/Header";
 import WaveBackgroundBottom from "../component/WaveBackgroundBottom";
 import WaveBackgroundTop from "../component/WaveBackgroundTop";
+import CardIntervenant from "../component/CardIntervenant";
+import CardEntreprise from "../component/CardEntreprise";
+import { entreprises } from "../data/Entreprise";
+import { intervenants } from "../data/Intervenants";
 import LogoMaps from "../assets/LogoMaps.svg";
 import LogoCalendrier from "../assets/LogoCalendrier.svg";
 import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg"
@@ -77,7 +81,49 @@ export default function HomePage() {
                         </div>
                     <WaveBackgroundBottom />
                 </div>
+                {/* Section Card */}
+                <div className="relative z-10 mx-0 bg-white border-2 border-orange-200 rounded-[50px] min-h-[300px] shadow-sm py-12">
+                    <div className="flex flex-col items-center justify-center">
+                        <h2 className="text-3xl font-bold text-gray-800 relative inline-block">
+                            Les intervenants
+                            <div className="absolute -bottom-3 left-0 w-full flex items-center">
+                                <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
+                                <div className="w-3 h-3 rounded-full bg-[#FFC107] border-4 border-black -ml-1 flex-shrink-0"></div>
+                            </div>
+                        </h2>
+                        
+                        {/* Grille des intervenants */}
+                        <div className="mt-8 mb-8 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+                            {intervenants.map((intervenant) => (
+                                <CardIntervenant
+                                    key={intervenant.id}
+                                    image={intervenant.photo}
+                                    title={intervenant.name}
+                                    message={intervenant.bio}
+                                />
+                            ))}
+                        </div>
+                        <h2 className="text-3xl font-bold text-gray-800 relative inline-block">
+                            Nos sponsors
+                            <div className="absolute -bottom-3 left-0 w-full flex items-center">
+                                <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
+                                <div className="w-3 h-3 rounded-full bg-[#FFC107] border-4 border-black -ml-1 flex-shrink-0"></div>
+                            </div>
+                        </h2>
+                        {/* Grille des entreprises */}
+                        <div className="mt-8 mb-8 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+                            {entreprises.map((entreprise) => (
+                                <CardEntreprise
+                                    key={entreprise.id}
+                                    image={entreprise.image}
+                                    name={entreprise.name}
+                                    description={entreprise.description}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
             <Footer />
-        </div>
+        </div>  
     )
 }; 
