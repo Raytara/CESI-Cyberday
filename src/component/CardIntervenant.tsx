@@ -4,7 +4,7 @@ interface CardProps {
   message: string;
 }
 
-export default function Card({ image, title, message }: CardProps) {
+export default function CardIntervenant({ image, title, message }: CardProps) {
   return (
     <div className="bg-white rounded-[2rem] shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 h-full">
       <img
