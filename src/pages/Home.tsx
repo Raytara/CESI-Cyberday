@@ -7,11 +7,13 @@ import CardEntreprise from "../component/CardEntreprise";
 import CarouselSection from "../component/CarouselSection";
 import { entreprises } from "../data/Entreprise";
 import { intervenants } from "../data/Intervenants";
+import LogoYoutube from "../assets/youtube.svg";
 import LogoMaps from "../assets/LogoMaps.svg";
 import LogoCalendrier from "../assets/LogoCalendrier.svg";
 import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg"
 import PetaleJaune from "../assets/PetaleJaune.svg"
 import PetaleOrangeClair from "../assets/PetaleOrangeClair.svg";
+
 import "../styles/Home.css";
 
 export default function HomePage() {
@@ -83,7 +85,7 @@ export default function HomePage() {
                     <WaveBackgroundBottom />
                 </div>
                 {/* Section Card */}
-                <div className="relative z-10 mx-0 bg-white border-2 border-orange-200 rounded-t-[50px] min-h-[300px] shadow-sm py-12">
+                <div className="relative z-10 -mt-8 mx-0 bg-white border-2 border-orange-200 rounded-t-[50px] min-h-[300px] shadow-sm py-12">
                     <div className="flex flex-col items-center justify-center">
                         <h2 className="text-3xl font-bold text-gray-800 relative inline-block">
                             Les intervenants
@@ -105,7 +107,7 @@ export default function HomePage() {
                             )}
                         />
                         
-                        <h2 className="text-3xl font-bold text-gray-800 relative inline-block">
+                        <h2 className="text-3xl mt-12 font-bold text-gray-800 relative inline-block">
                             Nos sponsors
                             <div className="absolute -bottom-3 left-0 w-full flex items-center">
                                 <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
@@ -124,6 +126,15 @@ export default function HomePage() {
                                 />
                             )}
                         />
+                    </div>
+                    <div className="flex flex-col items-center justify-center mt-16 mb-8 text-center text-white font-nunito bg-gradient-to-br from-[#FCC010] via-[#F9AF15] to-[#F59D19] rounded-[2rem] p-8 max-w-3xl mx-auto">
+                        <div className="flex justify-center items-center font-extrabold text-2xl">
+                            <h1>Vous ne pouvez pas être là ?</h1>
+                        </div>
+                        <div className="flex justify-center items-center font-semibold text-lg">
+                            <p>Suivez-nous en direct sur notre chaîne YouTube</p>
+                        </div>
+                        <img src={LogoYoutube} alt="Logo YouTube" className="w-[50%] h-[5%] -mb-12 -mt-12"/>
                     </div>
                 </div>
             <Footer />
