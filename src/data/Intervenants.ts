@@ -17,4 +17,16 @@ export const intervenants = [
     bio: "Claire est une analyste en sécurité informatique passionnée par la prévention des cyberattaques.",
     photo: "https://randomuser.me/api/portraits/women/3.jpg",
   },
+  {
+    id: 4,
+    name: "Claire Bernard",
+    bio: "Claire est une analyste en sécurité informatique passionnée par la prévention des cyberattaques.",
+    photo: "https://randomuser.me/api/portraits/women/3.jpg",
+  },
+  {
+    id: 5,
+    name: "Claire Bernard",
+    bio: "Claire est une analyste en sécurité informatique passionnée par la prévention des cyberattaques.",
+    photo: "https://randomuser.me/api/portraits/women/3.jpg",
+  },
 ]; 

@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function CardIntervenant({ image, title, message }: CardProps) {
   return (
-    <div className="bg-white rounded-[2rem] shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 h-full">
+    <div className="bg-white rounded-[2rem] p-6 flex flex-col items-center text-center border border-[#FFC107] h-full shadow-[10px_10px_15px_-3px_rgba(252,192,16,0.3)]">
       <img
         src={image}
         alt={title}
