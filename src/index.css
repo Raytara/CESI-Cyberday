@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'Nunito';
   src: url('./assets/Font/Nunito/Nunito-Light.ttf') format('truetype');
@@ -46,38 +42,42 @@
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('./assets/Font/Quicksand/static/Quicksand-Light.ttf') format('truetype');
+  src: url('./assets/Font/Quicksand/Quicksand-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('./assets/Font/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
+  src: url('./assets/Font/Quicksand/Quicksand-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('./assets/Font/Quicksand/static/Quicksand-Medium.ttf') format('truetype');
+  src: url('./assets/Font/Quicksand/Quicksand-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('./assets/Font/Quicksand/static/Quicksand-SemiBold.ttf') format('truetype');
+  src: url('./assets/Font/Quicksand/Quicksand-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('./assets/Font/Quicksand/static/Quicksand-Bold.ttf') format('truetype');
+  src: url('./assets/Font/Quicksand/Quicksand-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 /* :root {
