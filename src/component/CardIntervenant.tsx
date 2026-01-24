@@ -12,9 +12,8 @@ export default function CardIntervenant({ image, title, message }: CardProps) {
         alt={title}
         className="w-24 h-24 rounded-xl object-cover mb-4"
       />
-      <h2 className="text-sm font-bold text-black mb-1">{title}</h2>
-      <p className="text-xs text-gray-500 mb-2 font-semibold">Délégué à la sécurité numérique</p>
-      <p className="text-xs text-gray-500">{message}</p>
+      <h2 className="text-lg font-nunito font-bold text-black mb-1">{title}</h2>
+      <p className="text-sm font-nunito font-medium text-black">{message}</p>
     </div>
   );
 }

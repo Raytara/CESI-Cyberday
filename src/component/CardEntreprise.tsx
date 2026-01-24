@@ -12,8 +12,8 @@ export default function CardEntreprise({ image, name, description }: CardProps) 
                 alt={name}
                 className="h-16 object-contain mb-4"
             />
-            <h2 className="text-sm font-bold text-black mb-1">{name}</h2>
-            <p className="text-xs text-gray-400">{description}</p>
+            <h2 className="text-lg font-nunito font-bold text-black mb-1">{name}</h2>
+            <p className="text-sm font-nunito font-medium text-black">{description}</p>
         </div>
     );
 }

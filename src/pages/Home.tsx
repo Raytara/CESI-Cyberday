@@ -63,22 +63,22 @@ export default function HomePage() {
                             </h1>
                         </div>
                         <div className="flex justify-center">
-                            <p className="text-center mt-4 text-lg text-gray-700 font-nunito max-w-2xl">
+                            <p className="text-center mt-6 text-xl font-quicksand font-regular max-w-2xl">
                                 Rejoignez-nous pour une journée dédiée aux dernières innovations en cybersécurité, avec des experts, des conférences, stands et du networking de qualité.
                             </p>
                         </div>
-                        <div className="flex justify-center space-x-12 mt-6 text-gray-700 font-nunito">
+                        <div className="flex justify-center space-x-12 mt-6 text-black font-quicksand font-semibold text-[24px]">
                             <div className="flex text-center">
-                                <img src={LogoCalendrier} alt="Logo Calendrier" className="w-6 h-6 mr-2"/>
+                                <img src={LogoCalendrier} alt="Logo Calendrier" className="w-9 h-9 mr-1"/>
                                 <p>11 juin 2026</p>
                             </div>
-                            <div className="flex text-center">
-                                <img src={LogoMaps} alt="Logo Maps" className="w-6 h-6 mr-2"/>
+                            <div className="flex text-center text-black font-quicksand font-semibold text-[24px]">
+                                <img src={LogoMaps} alt="Logo Maps" className="w-9 h-9 mr-1"/>
                                 <p>Villers-lès-Nancy, France</p>
                             </div>
                         </div>
                         <div className="flex justify-center mt-8">
-                            <button className="text-white px-6 py-3 rounded-[16px] mr-12 ml-4 bg-[#FCC010] hover:bg-[#FCC010] shadow-md">
+                            <button className="text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] mr-12 ml-4 bg-[#FCC010] hover:bg-[#FCC010] shadow-md">
                                 Accéder à la billetterie
                             </button>
                         </div>
@@ -87,7 +87,7 @@ export default function HomePage() {
                 {/* Section Card */}
                 <div className="relative z-10 -mt-8 mx-0 bg-white border-2 border-orange-200 rounded-t-[50px] min-h-[300px] shadow-sm py-12">
                     <div className="flex flex-col items-center justify-center">
-                        <h2 className="text-3xl font-bold text-gray-800 relative inline-block">
+                        <h2 className="text-3xl font-bold text-black relative inline-block">
                             Les intervenants
                             <div className="absolute -bottom-3 left-0 w-full flex items-center">
                                 <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
@@ -107,7 +107,7 @@ export default function HomePage() {
                             )}
                         />
                         
-                        <h2 className="text-3xl mt-12 font-bold text-gray-800 relative inline-block">
+                        <h2 className="text-3xl mt-12 font-bold text-black relative inline-block">
                             Nos sponsors
                             <div className="absolute -bottom-3 left-0 w-full flex items-center">
                                 <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
@@ -128,10 +128,10 @@ export default function HomePage() {
                         />
                     </div>
                     <div className="flex flex-col items-center justify-center mt-16 mb-8 text-center text-white font-nunito bg-gradient-to-br from-[#FCC010] via-[#F9AF15] to-[#F59D19] rounded-[2rem] p-8 max-w-3xl mx-auto">
-                        <div className="flex justify-center items-center font-extrabold text-2xl">
+                        <div className="flex justify-center items-center font-black text-2xl">
                             <h1>Vous ne pouvez pas être là ?</h1>
                         </div>
-                        <div className="flex justify-center items-center font-semibold text-lg">
+                        <div className="flex justify-center items-center font-quicksand font-semibold text-lg">
                             <p>Suivez-nous en direct sur notre chaîne YouTube</p>
                         </div>
                         <img src={LogoYoutube} alt="Logo YouTube" className="w-[50%] h-[5%] -mb-12 -mt-12"/>

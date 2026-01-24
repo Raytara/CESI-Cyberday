@@ -21,7 +21,7 @@ export default function Header() {
             </nav>
 
             <div>
-                <button className="text-white px-6 py-3 rounded-[16px] mr-12 bg-[#FCC010] hover:bg-[#FCC010] shadow-md">
+                <button className="text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] mr-12 bg-[#FCC010] hover:bg-[#FCC010] shadow-md">
                     Accéder à la billeterie
                 </button>
             </div>
