@@ -1,0 +1,7 @@
+.text-shadow-cyber {
+  text-shadow: 3px 3px 0px #fcc010;
+}
+
+.text-shadow-cyber-dark {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
