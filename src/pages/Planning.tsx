@@ -11,9 +11,9 @@ import "../styles/Planning.css";
 
 export default function Planning() {
     return (
-        <div>
+        <div className="h-screen overflow-hidden">
             <Header />
-            <div>
+            <div className="h-full overflow-hidden flex flex-col">
                 <WaveBackgroundTop />
                 <div>
                     <div className="flex -mt-20 justify-center items-center gap-4 bg-[#FDCD40] px-20 py-5 rounded-full w-fit mx-auto">
@@ -71,7 +71,7 @@ export default function Planning() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-4">
+                <div className="flex flex-col justify-center items-center gap-4 flex-grow">
                     <img src={Horloge} alt="Horloge" />
                     <div className="font-nunito font-black text-4xl text-[#FCC010] text-shadow-cyber-dark">
                         <h1>BIENTÔT DISPONIBLE !</h1>
