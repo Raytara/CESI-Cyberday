@@ -4,6 +4,9 @@ import WaveBackgroundTop from "../component/WaveBackgroundTop";
 import Prediction from "../assets/prediction.svg"
 import CalendrierLogo from "../assets/LogoCalendrier.svg"
 import Horloge from "../assets/Horloge.svg"; 
+import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg";
+import PetaleJaune from "../assets/PetaleJaune.svg";
+import PetaleOrangeClair from "../assets/PetaleOrangeClair.svg";
 import "../styles/Planning.css";
 
 export default function Planning() {
@@ -21,7 +24,36 @@ export default function Planning() {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center mt-12 gap-2 font-quicksand font-medium text-2xl">
-                    <span>Rester connectés, les détails arrivent très bientôt</span>
+                    <div className="relative w-fit">
+                        {/* Pétale orange foncé (en bas à gauche du début du texte) */}
+                        <img 
+                            src={PetaleOrangeClair} 
+                            alt="Pétale" 
+                            className="absolute -left-20 -bottom-14 w-8 h-8" 
+                        />
+                        
+                        <span>
+                            Rester connectés, les détails arrivent très{" "}
+                            <span className="relative inline-block">
+                                {/* Pétale Orange Clair (au-dessus de bientôt) */}
+                                <img 
+                                    src={PetaleOrangeFonce} 
+                                    alt="" 
+                                    className="absolute left-24 -top-10 w-6 h-6"
+                                />
+                                
+                                bientôt
+                                
+                                {/* Pétale Jaune (en-dessous de bientôt) */}
+                                <img 
+                                    src={PetaleJaune} 
+                                    alt="" 
+                                    className="absolute left-40 w-12 h-12"
+                                />
+                            </span>
+                        </span>
+                    </div>
+
                     <div className="flex justify-center items-center gap-2 mt-4">
                         <img src={CalendrierLogo} alt="Calendrier" />
                         <div className="font-quicksand font-semibold">
