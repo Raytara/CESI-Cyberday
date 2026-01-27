@@ -16,14 +16,37 @@ export default function CarouselSection<T>({
 }: CarouselSectionProps<T>) {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  // Détecter la taille d'écran
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // mobile: < 768px
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024); // tablet: 768px - 1024px
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  // Calculer le nombre d'items par page en fonction de la taille d'écran
+  const getItemsPerPage = () => {
+    if (isMobile) return 1;
+    if (isTablet) return 2;
+    return itemsPerPage; // desktop: 3 par défaut
+  };
+
+  const currentItemsPerPage = getItemsPerPage();
 
   // Calculer le nombre total de pages
-  const totalPages = Math.ceil(items.length / itemsPerPage);
+  const totalPages = Math.ceil(items.length / currentItemsPerPage);
 
   // Obtenir les items de la page actuelle
   const getCurrentPageItems = () => {
-    const startIndex = currentPage * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
+    const startIndex = currentPage * currentItemsPerPage;
+    const endIndex = startIndex + currentItemsPerPage;
     return items.slice(startIndex, endIndex);
   };
 
@@ -46,7 +69,7 @@ export default function CarouselSection<T>({
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [currentPage, isPaused, totalPages, autoPlayInterval]);
+  }, [currentPage, isPaused, totalPages, autoPlayInterval, currentItemsPerPage]);
 
   // Pause au survol
   const handleMouseEnter = () => {
