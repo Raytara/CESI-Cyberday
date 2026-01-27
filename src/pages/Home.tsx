@@ -134,7 +134,9 @@ export default function HomePage() {
                         <div className="flex justify-center items-center font-quicksand font-semibold text-sm md:text-base lg:text-lg mt-2">
                             <p>Suivez-nous en direct sur notre chaîne YouTube</p>
                         </div>
-                        <img src={LogoYoutube} alt="Logo YouTube" className="w-[60%] md:w-[55%] lg:w-[50%] h-auto -mb-8 lg:-mb-12 -mt-8 lg:-mt-12"/>
+                        <a href="https://www.youtube.com/@Cyberday_GrandEst/featured" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center w-full">
+                          <img src={LogoYoutube} alt="Logo YouTube" className="w-[60%] md:w-[55%] lg:w-[50%] h-auto -mb-8 lg:-mb-12 -mt-8 lg:-mt-12"/>
+                        </a>
                     </div>
                 </div>
             <Footer />

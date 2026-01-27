@@ -15,10 +15,10 @@ export default function Footer() {
             <div className="flex flex-col items-center justify-center lg:mr-6">
                 <p className="text-sm lg:text-base mb-2">Suivez nous sur nos réseaux sociaux</p>
                 <div className="flex items-center justify-center gap-3">
-                    <a href="#" className="hover:opacity-70 transition-opacity">
+                    <a href="https://www.youtube.com/@Cyberday_GrandEst/featured" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                         <img src={youtubeIcon} alt="Icon Youtube" className="w-8 h-8 lg:w-10 lg:h-10" />
                     </a>
-                    <a href="#" className="hover:opacity-70 transition-opacity">
+                    <a href="https://www.linkedin.com/company/cyberday-grandest/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                         <img src={linkedinIcon} alt="Icon Linkedin" className="w-8 h-8 lg:w-10 lg:h-10" />
                     </a>
                 </div>
