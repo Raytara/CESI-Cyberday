@@ -35,9 +35,11 @@ export default function Header() {
 
             {/* Bouton billeterie Desktop */}
             <div className="hidden lg:block">
-                <button className="text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] mr-12 bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
-                    Accéder à la billeterie
-                </button>
+                <a href="https://my.weezevent.com/cyberday-2026" target="_blank" rel="noopener noreferrer">
+                    <button className="text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] mr-12 bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
+                        Accéder à la billeterie
+                    </button>
+                </a>
             </div>
 
             {/* Hamburger icon Mobile/Tablet */}
@@ -99,9 +101,11 @@ export default function Header() {
 
                     {/* Bouton billeterie en bas */}
                     <div className="mt-auto px-6 pb-8">
-                        <button className="w-full text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
-                            Accéder à la billeterie
-                        </button>
+                        <a href="https://my.weezevent.com/cyberday-2026" target="_blank" rel="noopener noreferrer">
+                            <button className="w-full text-white font-nunito font-extrabold px-6 py-3 rounded-[16px] bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
+                                Accéder à la billeterie
+                            </button>
+                        </a>
                     </div>
                 </nav>
             </div>
