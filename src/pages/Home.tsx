@@ -78,9 +78,11 @@ export default function HomePage() {
                             </div>
                         </div>
                         <div className="flex justify-center mt-6 lg:mt-8">
-                            <button className="text-white font-nunito font-extrabold px-4 py-2 lg:px-6 lg:py-3 rounded-[16px] mx-4 lg:mr-12 lg:ml-4 bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
-                                Accéder à la billetterie
-                            </button>
+                            <a href="https://my.weezevent.com/cyberday-2026" target="_blank" rel="noopener noreferrer">
+                                <button className="text-white font-nunito font-extrabold px-4 py-2 lg:px-6 lg:py-3 rounded-[16px] mx-4 lg:mr-12 lg:ml-4 bg-[#FCC010] hover:bg-[#e0ad0e] shadow-md transition-colors">
+                                    Accéder à la billetterie
+                                </button>
+                            </a>
                         </div>
                     <WaveBackgroundBottom />
                 </div>

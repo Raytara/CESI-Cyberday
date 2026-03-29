@@ -11,75 +11,70 @@ import "../styles/Planning.css";
 
 export default function Planning() {
     return (
-        <div className="h-screen overflow-hidden">
+        <div className="relative flex min-h-screen flex-col overflow-x-hidden lg:h-screen lg:overflow-hidden">
             <Header />
-            <div className="h-full overflow-hidden flex flex-col">
-                <WaveBackgroundTop />
-                <div>
-                    <div className="flex -mt-20 justify-center items-center gap-4 bg-[#FDCD40] px-20 py-5 rounded-full w-fit mx-auto">
-                        <img src={Prediction} alt="Prévision" />
-                        <div className="font-nunito font-extrabold text-4xl text-white">
-                            <h2>Bientôt révélé</h2>
-                        </div>
+            <WaveBackgroundTop />
+            
+            <div className="flex w-full justify-center">
+                <div className="mx-4 -mt-6 flex w-fit max-w-[calc(100%-2rem)] items-center justify-center gap-2 rounded-full bg-[#FDCD40] px-6 py-3 sm:-mt-10 sm:gap-3 sm:px-10 sm:py-4 lg:-mt-20 lg:gap-4 lg:px-20 lg:py-5">
+                    <img src={Prediction} alt="Prévision" className="w-8 sm:w-10 lg:w-auto" />
+                    <div className="text-center font-nunito text-xl font-extrabold text-white sm:text-3xl lg:text-4xl">
+                        <h2>Bientôt révélé</h2>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-12 gap-2 font-quicksand font-medium text-2xl">
-                    <div className="relative w-fit">
-                        {/* Pétale orange foncé (en bas à gauche du début du texte) */}
-                        <img 
-                            src={PetaleOrangeClair} 
-                            alt="Pétale" 
-                            className="absolute -left-20 -bottom-14 w-8 h-8" 
-                        />
-                        
-                        <span>
-                            Rester connectés, les détails arrivent très{" "}
-                            <span className="relative inline-block">
-                                {/* Pétale Orange Clair (au-dessus de bientôt) */}
-                                <img 
-                                    src={PetaleOrangeFonce} 
-                                    alt="" 
-                                    className="absolute left-24 -top-10 w-6 h-6"
-                                />
-                                
-                                bientôt
-                                
-                                {/* Pétale Jaune (en-dessous de bientôt) */}
-                                <img 
-                                    src={PetaleJaune} 
-                                    alt="" 
-                                    className="absolute left-40 w-12 h-12"
-                                />
-                            </span>
-                        </span>
-                    </div>
-
-                    <div className="flex justify-center items-center gap-2 mt-4">
-                        <img src={CalendrierLogo} alt="Calendrier" />
-                        <div className="font-quicksand font-semibold">
-                            <p>11 Juin 2026</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex justify-center font-nunito items-center my-10 text-6xl font-black text-shadow-cyber">
-                    <div className="relative inline-block">
-                        <span>PROGRAMME À VENIR</span>
-                        {/* La Barre Stylisée */}
-                        <div className="absolute left-0 right-0 flex items-center">
-                            <div className="h-[5px] bg-black rounded-l-full flex-grow"></div>
-                            <div className="w-3 h-3 rounded-full bg-[#FFC107] border-4 border-black -ml-1 flex-shrink-0"></div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 flex-grow">
-                    <img src={Horloge} alt="Horloge" />
-                    <div className="font-nunito font-black text-4xl text-[#FCC010] text-shadow-cyber-dark">
-                        <h1>BIENTÔT DISPONIBLE !</h1>
-                    </div>
-                </div>
-                <WaveBackgroundBottom />
             </div>
+
+            <div className="mt-6 flex flex-col items-center justify-center gap-2 px-6 text-center font-quicksand text-base font-medium sm:mt-8 sm:text-xl lg:mt-12 lg:text-2xl">
+                <div className="relative w-fit max-w-[22rem] sm:max-w-2xl">
+                    <img 
+                        src={PetaleOrangeClair} 
+                        alt="Pétale" 
+                        className="absolute -bottom-14 -left-20 hidden h-8 w-8 lg:block" 
+                    />
+                    <span className="leading-snug">
+                        Rester connectés, les détails arrivent très{" "}
+                        <span className="relative inline-block">
+                            <img 
+                                src={PetaleOrangeFonce} 
+                                alt="" 
+                                className="absolute -top-10 left-24 hidden h-6 w-6 lg:block"
+                            />
+                            bientôt
+                            <img 
+                                src={PetaleJaune} 
+                                alt="" 
+                                className="absolute left-40 hidden h-12 w-12 lg:block"
+                            />
+                        </span>
+                    </span>
+                </div>
+
+                <div className="mt-3 flex items-center justify-center gap-2 text-sm sm:mt-4 sm:text-lg lg:text-2xl">
+                    <img src={CalendrierLogo} alt="Calendrier" className="w-5 sm:w-6 lg:w-auto" />
+                    <div className="font-quicksand font-semibold">
+                        <p>11 Juin 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="my-6 flex items-center justify-center px-4 text-center font-nunito text-3xl font-black text-shadow-cyber sm:my-8 sm:text-5xl lg:my-10 lg:text-6xl">
+                <div className="relative inline-block">
+                    <span>PROGRAMME À VENIR</span>
+                    <div className="absolute left-0 right-0 flex items-center">
+                        <div className="h-[3px] flex-grow rounded-l-full bg-black sm:h-[4px] lg:h-[5px]"></div>
+                        <div className="-ml-1 h-2 w-2 flex-shrink-0 rounded-full border-2 border-black bg-[#FFC107] sm:h-3 sm:w-3 sm:border-4 lg:h-3 lg:w-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-grow flex-col items-center justify-center gap-3 px-4 pb-4 sm:gap-4 sm:pb-10 lg:pb-0">
+                <img src={Horloge} alt="Horloge" className="w-24 sm:w-32 lg:w-auto" />
+                <div className="text-center font-nunito text-2xl font-black text-[#FCC010] text-shadow-cyber-dark sm:text-3xl lg:text-4xl">
+                    <h1>BIENTÔT DISPONIBLE !</h1>
+                </div>
+            </div>
+
+            <WaveBackgroundBottom />
         </div>
     );
 }
-
