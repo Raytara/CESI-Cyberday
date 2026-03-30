@@ -22,14 +22,13 @@ export default function Contact() {
                 </h1>
 
                 <p className="text-center text-base md:text-lg lg:text-xl font-quicksand font-regular max-w-2xl">
-                    Pour toute question sur l&apos;événement, les intervenants, les stands ou l&apos;organisation de la journée,
-                    vous pouvez contacter directement cette personne.
+Pour toute question sur l&apos;événement, les intervenants, les stands, les opportunités de sponsoring ou l&apos;organisation de la journée, ou si vous souhaitez animer un stand ou proposer une présentation, vous pouvez contacter directement cette personne.
                 </p>
 
                 <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-12 text-black font-quicksand font-semibold text-base md:text-lg lg:text-[24px]">
                     <div className="flex items-center text-center">
                         <img src={LogoEmail} alt="Logo Email" className="w-6 h-6 lg:w-9 lg:h-9 mr-1" />
-                        <p>Réponse sous 48h ouvrées</p>
+                        <p>simon.meheut@viacesi.fr</p>
                     </div>
                 </div>
             </div>
