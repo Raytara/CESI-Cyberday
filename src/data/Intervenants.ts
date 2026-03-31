@@ -4,7 +4,7 @@ export const intervenants = [
   {
     id: 1, 
     name: "Alexis Koestel",
-    bio: "Spécialiste en cybersécurité et tests d'intrusion, il accompagne les organisations dans l'identification des vulnérabilités et le renforcement de leurs infrastructures.Co‑gérant de NevaSec, il est également formateur en cybersécurité dans plusieurs écoles supérieures.",
+    bio: "Spécialiste en cybersécurité et tests d'intrusion, il accompagne les organisations dans l'identification des vulnérabilités et le renforcement de leurs infrastructures. Co‑gérant de NevaSec, il est également formateur en cybersécurité dans plusieurs écoles supérieures.",
     photo: AlexisPhoto
   },
 ]; 

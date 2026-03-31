@@ -6,9 +6,9 @@ export default function Footer() {
         <footer className="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-6 py-6 lg:py-0 bg-white min-h-[8rem] lg:h-32 font-quicksand font-regular relative z-20 gap-6 lg:gap-0">
             {/* Section Mentions légales */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-4 text-sm lg:text-base lg:ml-20 text-center lg:text-left">
-                <p className="hover:text-[#FCC010] cursor-pointer transition-colors">Mention légales</p>
+                {/* <p className="hover:text-[#FCC010] cursor-pointer transition-colors">Mention légales</p>
                 <p className="hover:text-[#FCC010] cursor-pointer transition-colors">Politique de cookies</p>
-                <p className="hover:text-[#FCC010] cursor-pointer transition-colors">Cookies</p>
+                <p className="hover:text-[#FCC010] cursor-pointer transition-colors">Cookies</p> */}
             </div>
 
             {/* Section Réseaux sociaux */}

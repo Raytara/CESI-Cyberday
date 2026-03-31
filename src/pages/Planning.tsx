@@ -1,7 +1,7 @@
 import Header from "../component/Header";
 import WaveBackgroundBottom from "../component/WaveBackgroundBottom";
 import WaveBackgroundTop from "../component/WaveBackgroundTop";
-import Prediction from "../assets/prediction.svg"
+import LogoMaps from "../assets/LogoMaps.svg";
 import CalendrierLogo from "../assets/LogoCalendrier.svg"
 import Horloge from "../assets/Horloge.svg"; 
 import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg";
@@ -15,11 +15,12 @@ export default function Planning() {
             <Header />
             <WaveBackgroundTop />
             
-            <div className="flex w-full justify-center">
-                <div className="mx-4 -mt-6 flex w-fit max-w-[calc(100%-2rem)] items-center justify-center gap-2 rounded-full bg-[#FDCD40] px-6 py-3 sm:-mt-10 sm:gap-3 sm:px-10 sm:py-4 lg:-mt-20 lg:gap-4 lg:px-20 lg:py-5">
-                    <img src={Prediction} alt="Prévision" className="w-8 sm:w-10 lg:w-auto" />
-                    <div className="text-center font-nunito text-xl font-extrabold text-white sm:text-3xl lg:text-4xl">
-                        <h2>Bientôt révélé</h2>
+            <div className="my-6 flex items-center justify-center px-4 text-center font-nunito text-3xl font-black text-shadow-cyber sm:my-8 sm:text-5xl lg:my-10 lg:text-6xl">
+                <div className="relative inline-block">
+                    <span>PROGRAMME À VENIR</span>
+                    <div className="absolute left-0 right-0 flex items-center">
+                        <div className="h-[3px] flex-grow rounded-l-full bg-black sm:h-[4px] lg:h-[5px]"></div>
+                        <div className="-ml-1 h-2 w-2 flex-shrink-0 rounded-full border-2 border-black bg-[#FFC107] sm:h-3 sm:w-3 sm:border-4 lg:h-3 lg:w-3"></div>
                     </div>
                 </div>
             </div>
@@ -54,15 +55,9 @@ export default function Planning() {
                     <div className="font-quicksand font-semibold">
                         <p>11 Juin 2026</p>
                     </div>
-                </div>
-            </div>
-
-            <div className="my-6 flex items-center justify-center px-4 text-center font-nunito text-3xl font-black text-shadow-cyber sm:my-8 sm:text-5xl lg:my-10 lg:text-6xl">
-                <div className="relative inline-block">
-                    <span>PROGRAMME À VENIR</span>
-                    <div className="absolute left-0 right-0 flex items-center">
-                        <div className="h-[3px] flex-grow rounded-l-full bg-black sm:h-[4px] lg:h-[5px]"></div>
-                        <div className="-ml-1 h-2 w-2 flex-shrink-0 rounded-full border-2 border-black bg-[#FFC107] sm:h-3 sm:w-3 sm:border-4 lg:h-3 lg:w-3"></div>
+                    <div className="flex items-center text-center">
+                                <img src={LogoMaps} alt="Logo Maps" className="w-6 h-6 lg:w-9 lg:h-9 mr-1"/>
+                                <p>Villers-lès-Nancy, France</p>
                     </div>
                 </div>
             </div>
