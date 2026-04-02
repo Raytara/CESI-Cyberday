@@ -84,6 +84,13 @@ export default function HomePage() {
                                 </button>
                             </a>
                         </div>
+                        <div className="flex justify-center mt-6 px-4 lg:px-0">
+                            <div className="bg-[#FFF3CD] border-2 border-[#FCC010] rounded-[16px] px-6 py-4 max-w-2xl text-center">
+                                <p className="text-black font-nunito font-semibold text-base md:text-lg">
+                                    Inscription gratuite et obligatoire pour accéder à l'événement
+                                </p>
+                            </div>
+                        </div>
                     <WaveBackgroundBottom />
                 </div>
                 {/* Section Card */}
