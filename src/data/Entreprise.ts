@@ -56,7 +56,7 @@ export const entreprises = [
     {
         id: 7,
         image: VillageByCaLogo,
-        "name": "Village by CA",
+        "name": "Le Village by CA",
         "lien": "https://levillagebyca.com/",
         "description": "Depuis 2014, le Village by CA accélère l’innovation dans les territoires, en accompagnant le développement des start-up et la transformation des entreprises.",
     },
