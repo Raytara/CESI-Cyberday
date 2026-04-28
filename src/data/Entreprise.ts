@@ -2,11 +2,13 @@ import CheckPointLogo from "../assets/Entreprise/Checkpoint.svg"
 import FortinetLogo from "../assets/Entreprise/Fortinet.svg"
 import CreditAgricoleLogo from "../assets/Entreprise/CreditAgricole.svg"
 import StormshieldLogo from "../assets/Entreprise/Stormshield.jpg"
-import OrangeLogo from "../assets/Entreprise/orange.png"
+import OrangeLogo from "../assets/Entreprise/orange.svg"
 import TrendMicroLogo from "../assets/Entreprise/TrendMicro.png"
 import SpieLogo from "../assets/Entreprise/Spie.png"
 import BouyguesLogo from "../assets/Entreprise/Bouygues.png"
 import CapgeminiLogo from "../assets/Entreprise/Capgemini.png"
+import NevaSecLogo from "../assets/Entreprise/NevaSec_logo_v2.png"
+import VillageByCaLogo from "../assets/Entreprise/village.svg"
 
 export const entreprises = [
     {
@@ -47,29 +49,43 @@ export const entreprises = [
     {
         id: 6,
         image: CreditAgricoleLogo,
-        "name": "Crédit Agricole",
+        "name": "Crédit Agricole de Lorraine",
         "lien": "https://www.credit-agricole.fr/",
         "description": "Le Crédit Agricole est un groupe bancaire français, proposant une large gamme de produits et services financiers, notamment des comptes courants, des crédits, des assurances et des solutions d’épargne. Il est présent en France et à l’international, et s’appuie sur un réseau de caisses régionales et de filiales spécialisées.",
     },
     {
         id: 7,
-        image: SpieLogo,
-        "name": "Spie",
-        "lien": "https://www.spie.com/fr/",
-        "description": "Intervenant sur quatre marchés stratégiques, SPIE accompagne ses clients pour réussir la transition énergétique et une transformation numérique responsable. Elle joue un rôle majeur dans la transformation durable des villes et des territoires, la lutte contre le réchauffement climatique, la numérisation des services et le passage à l’industrie 4.0",
+        image: VillageByCaLogo,
+        "name": "Village by CA",
+        "lien": "https://levillagebyca.com/",
+        "description": "Depuis 2014, le Village by CA accélère l’innovation dans les territoires, en accompagnant le développement des start-up et la transformation des entreprises.",
     },
     {
         id: 8,
-        image: BouyguesLogo,
-        "name": "Bouygues Telecom",
-        "lien": "https://www.bouyguestelecom.fr/",
-        "description": "Bouygues Telecom est un opérateur français de télécommunications proposant des offres mobiles, internet et fixe aux particuliers et aux professionnels.",
+        image: SpieLogo,
+        "name": "Spie ICS",
+        "lien": "https://www.spie.fr/fr/nos-filiales/spie-ics",
+        "description": "SPIE ICS est une entreprise de services numériques française qui accompagne la transformation des organisations grâce à la diversité de ses expertises : infrastructures et cloud, cybersécurité, Digital Workplace, data & IA et applications. SPIE ICS est engagée en faveur d’un numérique plus durable qui contribue à la décarbonation de l’économie.",
     },
     {
         id: 9,
+        image: BouyguesLogo,
+        "name": "Bouygues Telecom Business",
+        "lien": "https://www.bouyguestelecom-business.fr/",
+        "description": "Bouygues Telecom Business vous accompagne sur l’ensemble de votre chaîne de valeur, depuis l’intégration sur mesure de vos services de connectivité jusqu’à la modernisation de votre système d’information.",
+    },
+    {
+        id: 10,
         image: CapgeminiLogo,
         "name": "Capgemini",
         "lien": "https://www.capgemini.com/fr-fr/",
-        "description": "Capgemini est une entreprise spécialisée dans le conseil, la technologie et accompagne les entreprises du monde entier dans leur transformation en tirant parti des technologies les plus innovantes",
+        "description": "Capgemini est une entreprise spécialisée dans le conseil, la technologie et accompagne les entreprises du monde entier dans leur transformation en tirant parti des technologies les plus innovantes.",
     },
+    {
+        id: 11,
+        image: NevaSecLogo,
+        "name": "NevaSec",
+        "lien": "https://www.nevasec.fr",
+        "description": "NevaSec propose des services pour répondre à vos besoins en sécurité informatique actuels et futurs, assurant la protection et la continuité de votre entreprise.",
+    }
 ]
