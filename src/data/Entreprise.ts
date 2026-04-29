@@ -8,7 +8,7 @@ import SpieLogo from "../assets/Entreprise/Spie.png"
 import BouyguesLogo from "../assets/Entreprise/Bouygues.png"
 import CapgeminiLogo from "../assets/Entreprise/Capgemini.png"
 import NevaSecLogo from "../assets/Entreprise/NevaSec_logo_v2.png"
-import VillageByCaLogo from "../assets/Entreprise/village.svg"
+import VillageByCaLogo from "../assets/Entreprise/village.png"
 
 export const entreprises = [
     {
@@ -56,9 +56,9 @@ export const entreprises = [
     {
         id: 7,
         image: VillageByCaLogo,
-        "name": "Le Village by CA",
+        "name": "Le Village by CA Lorraine : Accélérateur de start-up",
         "lien": "https://levillagebyca.com/",
-        "description": "Depuis 2014, le Village by CA accélère l’innovation dans les territoires, en accompagnant le développement des start-up et la transformation des entreprises.",
+        "description": "Membre d'un réseau de 48 accélérateurs créé par le Crédit Agricole en 2014, le Village by CA Lorraine accompagne depuis 2018 les start-up sur 24 mois à Nancy et Metz. Diagnostic 360°, réseau de partenaires, événements, espaces collaboratifs et visibilité : des leviers mis en place pour accélérer la croissance des start-ups du territoire au niveau national et international.",
     },
     {
         id: 8,
