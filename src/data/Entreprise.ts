@@ -44,7 +44,7 @@ export const entreprises = [
         image: TrendMicroLogo,
         "name": "TrendAI",
         "lien": "https://www.trendaisecurity.com/fr/",
-        "description": "TrendAI™, leader mondial de la sécurité de l’IA, contribue à rendre le monde plus sûr pour les échanges d’informations numériques entre entreprises et instances du service public. Porté par son expertise et son innovation en matière de sécurité, TrendAI™ capitalise sur l’IA pour protéger plus de 500 000 entreprises et des millions de particuliers."
+        "description": "TrendAI™, une business unit de Trend Micro™ et leader mondial de la sécurité de l’IA, contribue à rendre le monde plus sûr pour les échanges d’informations numériques entre entreprises et instances du service public. Porté par son expertise et son innovation en matière de sécurité, TrendAI™ capitalise sur l’intelligence artificielle pour protéger plus de 500 000 entreprises et des millions de particuliers dans les environnements IA, cloud, de réseau, d’endpoints et de dispositifs. AI Fearlessly. TrendMicro.com.",
     },
     {
         id: 6,
