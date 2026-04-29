@@ -42,9 +42,9 @@ export const entreprises = [
     {
         id: 5,
         image: TrendMicroLogo,
-        "name": "TrendMicro",
-        "lien": "https://www.trendmicro.com/fr/home.html",
-        "description": "Trend Micro est une entreprise spécialisée dans la cybersécurité, qui conçoit des solutions de protection des réseaux, des postes de travail et des données. Elle accompagne les organisations dans la sécurisation de leurs systèmes d’information face aux risques numériques.",
+        "name": "TrendAI",
+        "lien": "https://www.trendaisecurity.com/fr/",
+        "description": "TrendAI™, leader mondial de la sécurité de l’IA, contribue à rendre le monde plus sûr pour les échanges d’informations numériques entre entreprises et instances du service public. Porté par son expertise et son innovation en matière de sécurité, TrendAI™ capitalise sur l’IA pour protéger plus de 500 000 entreprises et des millions de particuliers."
     },
     {
         id: 6,
