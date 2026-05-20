@@ -80,8 +80,12 @@ export default function CarouselSection<T>({
       const cards = measureContainerRef.current.querySelectorAll("[data-measure-card]");
       let maxHeight = 0;
 
-      cards.forEach((card) => {
-        maxHeight = Math.max(maxHeight, card.getBoundingClientRect().height);
+      // Mesurer uniquement les items de la page actuelle
+      const currentPageItems = getCurrentPageItems();
+      cards.forEach((card, index) => {
+        if (index < currentPageItems.length) {
+          maxHeight = Math.max(maxHeight, card.getBoundingClientRect().height);
+        }
       });
 
       setCarouselMinHeight(maxHeight);
@@ -99,7 +103,7 @@ export default function CarouselSection<T>({
     cards.forEach((card) => resizeObserver.observe(card));
 
     return () => resizeObserver.disconnect();
-  }, [items, renderCard, currentItemsPerPage]);
+  }, [items, renderCard, currentItemsPerPage, currentPage];
 
   // Pause au survol
   const handleMouseEnter = () => {

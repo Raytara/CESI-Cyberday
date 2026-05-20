@@ -1,4 +1,5 @@
 import AlexisPhoto from "../assets/Personnes/Alexis.jpg";
+import AvatarHomme from "../assets/Personnes/avatar-homme.jpg";
 
 export const intervenants = [
   {
@@ -11,6 +12,6 @@ export const intervenants = [
     id: 2,
     name: "Clément Loscot",
     bio: "Ingénieur développeur - INETUM.",
-    photo: AlexisPhoto
+    photo: AvatarHomme
   }
 ]; 
