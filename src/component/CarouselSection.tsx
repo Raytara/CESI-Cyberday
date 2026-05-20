@@ -103,7 +103,7 @@ export default function CarouselSection<T>({
     cards.forEach((card) => resizeObserver.observe(card));
 
     return () => resizeObserver.disconnect();
-  }, [items, renderCard, currentItemsPerPage, currentPage];
+  }, [items, renderCard, currentItemsPerPage, currentPage]);
 
   // Pause au survol
   const handleMouseEnter = () => {
