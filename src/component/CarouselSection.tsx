@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
 interface CarouselSectionProps<T> {
@@ -18,8 +18,6 @@ export default function CarouselSection<T>({
   const [isPaused, setIsPaused] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
-  const [carouselMinHeight, setCarouselMinHeight] = useState(0);
-  const measureContainerRef = useRef<HTMLDivElement | null>(null);
 
   // Détecter la taille d'écran
   useEffect(() => {
@@ -73,38 +71,6 @@ export default function CarouselSection<T>({
     return () => clearInterval(interval);
   }, [currentPage, isPaused, totalPages, autoPlayInterval, currentItemsPerPage]);
 
-  useLayoutEffect(() => {
-    const measureCards = () => {
-      if (!measureContainerRef.current) return;
-
-      const cards = measureContainerRef.current.querySelectorAll("[data-measure-card]");
-      let maxHeight = 0;
-
-      // Mesurer uniquement les items de la page actuelle
-      const currentPageItems = getCurrentPageItems();
-      cards.forEach((card, index) => {
-        if (index < currentPageItems.length) {
-          maxHeight = Math.max(maxHeight, card.getBoundingClientRect().height);
-        }
-      });
-
-      setCarouselMinHeight(maxHeight);
-    };
-
-    measureCards();
-
-    if (!measureContainerRef.current) return;
-
-    const resizeObserver = new ResizeObserver(() => {
-      measureCards();
-    });
-
-    const cards = measureContainerRef.current.querySelectorAll("[data-measure-card]");
-    cards.forEach((card) => resizeObserver.observe(card));
-
-    return () => resizeObserver.disconnect();
-  }, [items, renderCard, currentItemsPerPage, currentPage]);
-
   // Pause au survol
   const handleMouseEnter = () => {
     setIsPaused(true);
@@ -116,24 +82,9 @@ export default function CarouselSection<T>({
 
   return (
     <div className="w-full relative">
-      <div
-        ref={measureContainerRef}
-        className="absolute inset-x-0 top-0 opacity-0 pointer-events-none -z-10"
-        aria-hidden="true"
-      >
-        <div className="mt-8 mb-6 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
-          {items.map((item, index) => (
-            <div key={index} data-measure-card className="w-full">
-              {renderCard(item)}
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Grille des cards */}
       <div
-        className="mt-8 mb-6 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center"
-        style={carouselMinHeight ? { minHeight: `${carouselMinHeight}px` } : undefined}
+        className="mt-8 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -144,7 +95,7 @@ export default function CarouselSection<T>({
 
       {/* Indicateurs de pagination (dots) */}
       {totalPages > 1 && (
-        <div className="flex justify-center items-center gap-2 mb-8">
+        <div className="flex justify-center items-center gap-2 mt-6">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
               key={index}
