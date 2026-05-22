@@ -1,12 +1,6 @@
 import { useCallback, useState } from "react";
 import Header from "../component/Header";
 import WaveBackgroundBottom from "../component/WaveBackgroundBottom";
-import WaveBackgroundTop from "../component/WaveBackgroundTop";
-import LogoMaps from "../assets/LogoMaps.svg";
-import CalendrierLogo from "../assets/LogoCalendrier.svg"
-import PetaleOrangeFonce from "../assets/PetaleOrangeFonce.svg";
-import PetaleJaune from "../assets/PetaleJaune.svg";
-import PetaleOrangeClair from "../assets/PetaleOrangeClair.svg";
 import "../styles/Planning.css";
 
 const PDF_FILENAME = "programme.pdf";
