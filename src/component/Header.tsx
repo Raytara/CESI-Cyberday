@@ -26,7 +26,7 @@ export default function Header() {
                     Accueil
                 </NavLink>
                 <NavLink to="/planning" className={({ isActive }) => isActive ? "text-[16px] border-b-4 border-[#FCC010] text-black" : "text-[16px] border-b-4 border-transparent"}>
-                    Planning
+                    Programme du jour
                 </NavLink>
                 <NavLink to="/contact" className={({ isActive }) => isActive ? "text-[16px] border-b-4 border-[#FCC010] text-black" : "text-[16px] border-b-4 border-transparent"}>
                     Contact
@@ -92,7 +92,7 @@ export default function Header() {
                         onClick={closeMenu}
                         className={({ isActive }) => `px-6 py-4 text-[16px] ${isActive ? 'bg-[#FCC010] bg-opacity-10 border-l-4 border-[#FCC010] text-black font-bold' : 'text-gray-700 hover:bg-gray-50'}`}
                     >
-                        Planning
+                        Programme du jour
                     </NavLink>
                     <NavLink 
                         to="/contact" 
