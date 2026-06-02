@@ -6,7 +6,7 @@ import "../styles/Planning.css";
 const PDF_FILENAME = "programme.pdf";
 const PDF_PATH = `/${PDF_FILENAME}`;
 // SHA-256 hash of the original PDF — used to verify file integrity before download
-const EXPECTED_SHA256 = "a6e420f19fb38c125465790c0ef44143fc18e1214754c8e432d8f5e57eeaafc1";
+const EXPECTED_SHA256 = "e549e6305d0460ca8a8e770d81d07413ed87b314d499be224fb3c68917d6b5cd";
 
 /**
  * Computes the SHA-256 hash of an ArrayBuffer using the Web Crypto API.
