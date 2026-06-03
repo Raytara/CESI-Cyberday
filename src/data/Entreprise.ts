@@ -9,6 +9,11 @@ import BouyguesLogo from "../assets/Entreprise/Bouygues.png"
 import CapgeminiLogo from "../assets/Entreprise/Capgemini.png"
 import NevaSecLogo from "../assets/Entreprise/NevaSec_logo_v2.png"
 import VillageByCaLogo from "../assets/Entreprise/village.png"
+import ProofpointLogo from "../assets/Entreprise/proofpoint.svg"
+import CheopsLogo from "../assets/Entreprise/cheops.png"
+import CybiLogo from "../assets/Entreprise/cybi.png"
+import LpbConseilLogo from "../assets/Entreprise/lpbconseil.png"
+import CyberDetectLogo from "../assets/Entreprise/cyberdetect.png"
 
 export const entreprises = [
     {
@@ -87,5 +92,40 @@ export const entreprises = [
         "name": "NevaSec",
         "lien": "https://www.nevasec.fr",
         "description": "NevaSec propose des services pour répondre à vos besoins en sécurité informatique actuels et futurs, assurant la protection et la continuité de votre entreprise.",
+    },
+    {
+        id: 12,
+        image: ProofpointLogo,
+        "name": "Proofpoint",
+        "lien": "https://www.proofpoint.com/fr",
+        "description": "Proofpoint, Inc. est une entreprise leader dans le domaine de la cybersécurité qui protège les ressources les plus importantes et les plus à risques des entreprises : leurs collaborateurs. Grâce à une suite intégrée de solutions cloud, Proofpoint aide les entreprises du monde entier à stopper les menaces ciblées, à protéger leurs données et à rendre leurs utilisateurs plus résistants face aux cyberattaques.",
+    },
+    {
+        id: 13,
+        image: CheopsLogo,
+        "name": "Chéops technology",
+        "lien": "https://www.cheops.fr/",
+        "description": "Cheops technology conçoit, construit et exploite des infrastructures cloud souveraines, privées, hybrides et sécurisées, capables de valoriser les données des entreprises.",
+    },
+    {
+        id: 14,
+        image: CybiLogo,
+        "name": "Cybi",
+        "lien": "https://www.cybi.fr/",
+        "description": "Cybi, entreprise experte en cybersécurité, allie intelligence artificielle et expertise en cybersécurité pour offrir une vue globale des vulnérabilités et des attaques potentielles.",
+    },
+    {
+        id: 15,
+        image: LpbConseilLogo,
+        "name": "LPB Conseil",
+        "lien": "https://www.lpb-conseil.com/",
+        "description": "LPB Conseil est un cabinet de conseil en cybersécurité et transformation numérique. Il vous accompagne dans vos projets de sécurisation et d'optimisation de vos systèmes d'information à Strasbourg et dans le Grand Est.",
+    },
+    {
+        id: 16,
+        image: CyberDetectLogo,
+        "name": "Cyber-Detect",
+        "lien": "https://www.cyber-detect.com/",
+        "description": "Cyber-detect est spécialiste dans la détection mais aussi la caractérisation de malware afin de faire gagner du temps aux analystes, lever des doutes en cas de crise, alerter avant l'attaque.",
     }
 ]
